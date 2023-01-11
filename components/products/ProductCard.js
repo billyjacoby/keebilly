@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 export default function ProductCard({ permalink, image, name, description, price, soldOut}) {
+  console.log('name', name);
   return (
     <Link href="/product/[permalink]" as={`/product/${permalink}`}>
       <a className="mb-5 d-block font-color-black cursor-pointer">
